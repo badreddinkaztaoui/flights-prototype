@@ -1,0 +1,50 @@
+// IMPORT LIBRARIES STYLE
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+// SIMPLE CSS RESET
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 100%;
+   font-family: inherit;
+   vertical-align: baseline;
+   list-style: none;
+}
+
+// VARIABLES
+:root {
+   --clr-white: #fff;
+   --clr-black: #111;
+}
+
+// Main styles
+body {
+   font-family: "Lato", sans-serif;
+}
+
+.container {
+   max-width: 90%;
+   margin: 2rem auto;
+}
+
+.page-title {
+   font-size: 36px;
+   font-weight: 400;
+}
+
+// OVERIDE THE DEVEXTREM TOOLKIT STYLE
+.dx-datagrid-action {
+   font-weight: bold;
+   color: var(--clr-black);
+}
+
+.dx-data-row {
+   cursor: pointer;
+}
+
+.dx-header-row {
+   cursor: default;
+}

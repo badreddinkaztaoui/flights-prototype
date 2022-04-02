@@ -1,0 +1,28 @@
+.navbar {
+   height: 60px;
+   display: flex;
+   align-items: center;
+   background-color: rgb(9, 6, 10);
+
+   padding: 10px 20px;
+   .logo {
+      height: 100%;
+      img {
+         height: 40px;
+         width: 40px;
+         object-fit: cover;
+         border-radius: 50%;
+      }
+   }
+   .links {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      a {
+         color: var(--clr-white);
+         text-decoration: none;
+         display: inline-block;
+         margin-inline-start: 24px;
+      }
+   }
+}
