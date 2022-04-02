@@ -22,11 +22,11 @@ const FlightsList = () => {
          <h1 className="page-title">Flights List ✈ </h1>
          <DataGrid dataSource={data} allowColumnReordering={true} rowAlternationEnabled={true} className="grid" showBorders={true} onCellClick={(e) => onCellClickHandler(e)}>
             <SearchPanel visible={true} highlightCaseSensitive={true} placeholder="Search flight" />
-            <Column>
+            <Column caption="First column" cssClass="parent-cell">
                <Column dataField="code" caption="IATA airline code" dataType="string" />
                <Column dataField="number" caption="Flight number" alignment="left" dataType="number" />
             </Column>
-            <Column>
+            <Column caption="Seconde column" cssClass="parent-cell">
                <Column dataField="date" dataType="date" />
                <Column dataField="origin" dataType="string" />
                <Column dataField="destination" dataType="string" />
